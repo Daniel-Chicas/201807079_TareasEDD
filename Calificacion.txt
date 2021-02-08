@@ -1,0 +1,21 @@
+******************Errores***************************
+1. Cuando retornes los mensajes y no hay nada en la lista
+retorna un objeto json, el cliente si no le retornas nada da Error
+lo mejor es retornar un json vacio
+2. Cuando ya tiene datos retornas la lista de mensajes pero lo que mandas no tiene formato json
+tendria que ser un array de objetos json, si copias lo que retornas en jsoneditoronline.org
+da error.
+Asi tendria que ser el return  [{},{},{}] un array separado por ,
+
+******************Comentarios************************
+1. Me parece muy bien que tengas una pagina inicial para mostrar un mensaje, esto es para ver si funciona el servidor
+2. En tu insertar de la lista es de tipo string y siempre retornas
+una cadena vacia por lo cual ocupa espacio lo mejor seria que fuera void
+3. El metodo de imprimir no imprime solo retorna el primer valor
+4. Cuando insertas en la lista no es necesario imprimirlo con el fprint porque lo retorna al cliente
+
+******************Nota********************************
+Insertar datos  40/40
+Mostrar datos   30/40
+Servidor 20/20
+Total 90

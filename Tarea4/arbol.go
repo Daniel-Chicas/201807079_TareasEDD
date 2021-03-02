@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
 	"strconv"
 )
 
@@ -23,7 +24,7 @@ func NuevoArbol() *Arbol{
 func NuevoNodo (valor int) *NodoArbol{
 	return &NodoArbol{valor, 0, nil, nil}
 }
-
+/*
 func RotacionII(n *NodoArbol, n1 *NodoArbol) *NodoArbol{
 	n.Izq = n1.Der
 	n1.Der = n
@@ -89,13 +90,14 @@ func RotacionID(n *NodoArbol, n1 *NodoArbol) *NodoArbol{
 	n2.Factor = 0
 	return n2
 }
+ */
 
  func insertar(ra *NodoArbol, fact int, ya *bool) *NodoArbol{
-	var n1 *NodoArbol
+	//var n1 *NodoArbol
 	 if ra == nil {
 		 ra = NuevoNodo(fact)
 		 *ya = true
-	 }else if fact<ra.Factor{
+	 }else if fact<ra.Num{
 	 	izq := insertar(ra.Izq, fact, ya)
 	 	ra.Izq = izq
 		 if *ya == true {
@@ -108,27 +110,31 @@ func RotacionID(n *NodoArbol, n1 *NodoArbol) *NodoArbol{
 			 		ra.Factor = -1
 			 		break
 			 	case -1:
+			 		/*
 			 		n1 = ra.Izq
 					if n1.Factor==-1 {
 						ra = RotacionII(ra, n1)
 					}else{
 						ra = RotacionID(ra, n1)
 					}
+			 		 */
 					*ya = false
 			 }
 		 }
-	 }else if fact > ra.Factor{
+	 }else if fact > ra.Num{
 	 	der := insertar(ra.Der, fact, ya)
 	 	ra.Der = der
 	 	if *ya{
 			switch ra.Factor {
 				case 1:
+					/*
 					n1 = ra.Der
 					if n1.Factor == 1 {
 						ra = RotacionDD(ra, n1)
 					}else{
 						ra = RotacionDI(ra, n1)
 					}
+					 */
 					*ya = false
 					break
 				case 0:
@@ -143,16 +149,16 @@ func RotacionID(n *NodoArbol, n1 *NodoArbol) *NodoArbol{
 	 return ra
  }
 
-func (this *Arbol) Insertar(valor int){
+func (this *Arbol) Insertar(val int){
 	b := false
 	a := &b
-	this.raiz = insertar(this.raiz, valor, a)
+	this.raiz = insertar(this.raiz, val, a)
 }
 
 func main(){
 	a := NuevoArbol()
-	for i := 0; i < 40; i++ {
-		a.Insertar(i)
+	for i := 0; i < 10; i++ {
+		a.Insertar(rand.Intn(10))
 	}
 	fmt.Println("PREORDEN:")
 	PreOrden(a.raiz)
@@ -162,6 +168,10 @@ func main(){
 	fmt.Println("\n")
 	fmt.Println("POSORDEN")
 	posOrden(a.raiz)
+}
+
+func remove(slice []int, s int) []int {
+	return append(slice[:s], slice[s+1:]...)
 }
 
 func PreOrden(raiz *NodoArbol) {

@@ -1,0 +1,13 @@
+----------------Errores---------------------
+1. le dejaste el factor al metodo de insertar, estas usando campos innecesarios
+lo mejor era crear un nuevo arbol
+
+----------------Comentarios-----------------
+1. Eliminar los metodos que no se utilizan como el remove
+cuando uno mira el codigo que no conoce no sabe si ese funciona para algo
+
+Preorder    30/30
+Inorder     30/30
+PostOrder   30/30
+Arbol       5/10
+Total 		95 

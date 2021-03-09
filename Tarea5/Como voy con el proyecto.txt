@@ -1,0 +1,3 @@
+Considero que he avanzado mucho con el proyecto, ya que arreglé algunas cosas de la fase anterior e hice las modificaciones correspondientes que se solicitaron en esta. Para esta fase, mi proyecto ya es capaz de crear los árboles avl para cada tienda, agregando los productos que vienen en el json. También es capaz de hacer la matriz dispersa de pedidos por mes, las cuales se ordenan en una lista doblemente enlazada que pertenecen a un año en común.
+
+Me falta el carrito de compras y hacer el front-end de mi proyecto, para esto espero tener suficiente tiempo para terminar completamente esta fase.

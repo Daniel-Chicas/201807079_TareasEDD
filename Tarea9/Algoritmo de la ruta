@@ -1,0 +1,1 @@
+Algoritmo de la ruta más corta consiste en encontrar un camino entre dos vértices (o nodos) de tal manera que la suma de los pesos de las aristas que lo constituyen es mínima. Para esta fase yo utilizaré el algoritmo de Dijkstra, para esto usaré una matriz echa con listas doblemente enlazadas.

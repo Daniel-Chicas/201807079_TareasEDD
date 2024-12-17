@@ -1,0 +1,19 @@
+digraph Tarea3{
+node[shape=record];
+node0xc000094050[label="{{Marvin|Martinez}|Marvin25ronal}|Jugar apex"];
+node0xc000094050->node0xc0000940a0;
+node0xc0000940a0[label="{{Yaiza|Pineda}|Bambi}|Patinar"];
+node0xc0000940a0->node0xc000094050;
+node0xc0000940a0->node0xc0000940f0;
+node0xc0000940f0[label="{{Jonathan|Lopez}|Pancho}|Comer"];
+node0xc0000940f0->node0xc0000940a0;
+node0xc0000940f0->node0xc000094140;
+node0xc000094140[label="{{usuario1|bla}|bla}|Jugar apex"];
+node0xc000094140->node0xc0000940f0;
+node0xc000094140->node0xc000094190;
+node0xc000094190[label="{{usuario2|bla}|bla}|Jugar apex"];
+node0xc000094190->node0xc000094140;
+node0xc000094190->node0xc0000941e0;
+node0xc0000941e0[label="{{usuario3|sale edd}|vamos con todo}|100 en la fase 1"];
+node0xc0000941e0->node0xc000094190;
+}

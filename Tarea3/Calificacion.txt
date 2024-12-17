@@ -1,0 +1,10 @@
+----------------Errores---------------------
+1. La grafica no tiene estilo 
+
+----------------Comentarios-----------------
+1. Si la grafica va a estar sin colores ni diseños te vamos a bajar puntos en el proyecto
+
+
+Presentacion    20/50
+Recorrido	50/50
+Total 		70 
